@@ -20,41 +20,42 @@ export function AppRoutes(){
         tabBarInactiveTintColor: 'gray',
         headerShown: false,
         tabBarHideOnKeyboard: true,
+        tabBarLabel: ' ',
     }}>
 
     <Screen
         name="Home"
         component={Home}
         options={{
-            tabBarIcon: ({ size, color }) => <Feather name="home" color={color} />
+            tabBarIcon: ({ size, color }) => (<Feather name="home" color={color} size={size} />),
         }}
     />
     <Screen
         name="Fav"
         component={Fav}
         options={{
-            tabBarIcon: ({ size, color }) => <Feather name="heart" color={color} />
+            tabBarIcon: ({ size, color }) => <Feather name="heart" color={color} size={size} />
         }}
     />
     <Screen
         name="Wallet"
         component={Wallet}
         options={{
-            tabBarIcon: ({ size, color }) => <Feather name="credit-card" color={color} />
+            tabBarIcon: ({ size, color }) => <Feather name="credit-card" color={color} size={size} />
         }}
     />
     <Screen
         name="Cart"
         component={Cart}
         options={{
-            tabBarIcon: ({ size, color }) => <Feather name="shopping-cart" color={color} />
+            tabBarIcon: ({ size, color }) => <Feather name="shopping-cart" color={color} size={size} />
         }}
     />
     <Screen
         name="Profile"
         component={Profile}
         options={{
-            tabBarIcon: ({ size, color }) => <Feather name="user" color={color} />
+            tabBarIcon: ({ size, color }) => <Feather name="user" color={color} size={size} />
         }}
     />
     </Navigator>
